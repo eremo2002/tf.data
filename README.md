@@ -34,10 +34,10 @@ def onehot_encode_label(unique_label_names, path):
     return onehot_label
     
     
-data_list = glob('data/RAF_single_original/train/*/*.*')
+data_list = glob('data/RAF_single/train/*/*.*')
 
 labels_dict = {'angry':0, 'disgusted':1, 'fearful':2, 'happy':3, 'neutral':4, 'sad':5, 'surprised':6}
-label_name_list = os.listdir('data/RAF_single_original/train')
+label_name_list = os.listdir('data/RAF_single/train')
 
 # label onehot-encoding
 label_name_list = []
