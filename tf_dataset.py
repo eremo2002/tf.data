@@ -11,7 +11,7 @@ tf.config.experimental.set_memory_growth(physical_devices[0], True)
 tf.keras.backend.clear_session()
 
 labels_dict = {'angry':0, 'disgusted':1, 'fearful':2, 'happy':3, 'neutral':4, 'sad':5, 'surprised':6}
-data_list = glob('data/RAF_single_original/train/*/*.*')
+data_list = glob('data/RAF_single/train/*/*.*')
 
 def get_label(path):
     label = path.split('/')[-2]
