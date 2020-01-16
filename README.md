@@ -27,7 +27,7 @@ def get_label(path):
     return labels_dict[label]
     
     
-def onehot_encode_label(path):
+def onehot_encode_label(unique_label_names, path):
     onehot_label = unique_label_names == get_label(path)    
     onehot_label = onehot_label.astype(np.uint8)
     return onehot_label
@@ -39,8 +39,12 @@ labels_dict = {'angry':0, 'disgusted':1, 'fearful':2, 'happy':3, 'neutral':4, 's
 label_name_list = os.listdir('data/RAF_single_original/train')
 
 # label onehot-encoding
-label_list = [onehot_encode_label(path).tolist() for path in data_list]
+label_name_list = []
+for path in data_list:
+    label_name_list.append(get_label(path))
 
+unique_label_names = np.unique(label_name_list)
+label_list = [onehot_encode_label(unique_label_names, path).tolist() for path in data_list]
 ```
 
 ## make dataset
