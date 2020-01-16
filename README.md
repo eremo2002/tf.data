@@ -3,12 +3,12 @@
 ## Dataset directory
 >/data
 >>/test  
->>>...  
+#>>>...
 >>/train  
 >>>/angry  
 >>>>a.jpg  
 >>>>b.jpg  
->>>>...
+#>>>>...
 >>>/disgusted  
 >>>/fearful  
 >>>/happy  
