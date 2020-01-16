@@ -1,1 +1,1 @@
-# tf.data
+# training model using tf.data.Dataset
