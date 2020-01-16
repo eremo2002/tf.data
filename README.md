@@ -103,5 +103,6 @@ model.fit(dataset, epochs=100, steps_per_epoch=int(len(data_list) / batch_size))
 
 ### Reference
 I referenced this pages
+* https://www.tensorflow.org/api_docs/python/tf/data/Dataset?version=stable
 * https://www.kaggle.com/namepen/keras-densenet-with-tf-data
 * https://medium.com/trackin-datalabs/data-input-%EB%A7%8C%EB%93%A4%EA%B8%B0-74bb5c1ce52f
