@@ -1,4 +1,5 @@
 # training model using tf.data.Dataset
+### tensorflow 2.0
 
 ## Dataset directory
 ### 
