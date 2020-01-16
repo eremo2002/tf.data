@@ -2,12 +2,12 @@
 
 ## Dataset directory
 >data
->>test'\n'
->>train
->>>angry
->>>disgusted
->>>fearful
->>>happy
->>>neutral
->>>sad
->>>surprised
+>>test  
+>>train  
+>>>angry  
+>>>disgusted  
+>>>fearful  
+>>>happy  
+>>>neutral  
+>>>sad  
+>>>surprised  
